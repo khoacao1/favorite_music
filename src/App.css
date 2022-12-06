@@ -1,0 +1,138 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+
+body{
+	margin: auto;
+  	width: 90%;
+  	border: 3px solid #0E606B;
+  	padding: 15px;
+  	background-color: #e0fbfc33;
+	min-width:min-content;
+	font-family: 'Architects Daughter', cursive;
+	
+}
+
+h1{
+	font-size: 57px;
+	color: #ee6c4d	;
+	text-align: right;
+	margin: 5px;
+}
+#errormessage {
+	color:red;
+	font-size: 20px;
+	text-align: center;
+	text-shadow: 1px 1px 4px #ffffff;
+}
+#errorauthmessage {
+	color:red;
+	font-size: 20px;
+	text-shadow: 1px 1px 4px #ffffff;
+}
+#infosection{
+	color: #0E606B;
+	text-align: center;
+	padding: 10px;
+	text-shadow: 1px 1px 4px #ffffff;
+}
+#songname{
+	color: #2ec4b6;
+	font-size: 40px;
+	font-weight: 600;
+	text-shadow: 1px 1px 5px #000000,0 0 10px #ffffff;
+	
+}
+
+#artist{
+	font-size: 20px;
+}
+#album{
+	font-size: 20px;
+}
+span{
+	font-weight: 600;
+}
+#album_img{
+	
+	max-width: 450px;
+	max-height: 450px;
+	border-radius: 5%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	box-shadow: 2px 2px 15px #000000;
+	
+}
+#audio{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#spotify_link{
+	font-size: 20px;
+}
+#logout{
+	align-items: flex-end;
+	font-family: 'Architects Daughter', cursive;
+	display: block;
+	margin-left: auto;
+	margin-right: 0;
+	margin-bottom: 10px;	
+}
+#button{
+	font-family: 'Architects Daughter', cursive;
+}
+#deletebutton{
+	font-family: 'Architects Daughter', cursive;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: red;
+	color: #ffffff;
+}
+#save{
+	font-family: 'Architects Daughter', cursive;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: green;
+	color: yellow;
+}

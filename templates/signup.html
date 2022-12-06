@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Register Page</title>
+</head>
+
+<body>
+    <h1>Sign Up!</h1>
+    <form action="/signup" method="POST">
+        <input type="text" placeholder="Signup Your Username" name="username" id="username" required>
+        <input type="password" placeholder="Signup Your Password" name="password" id="password" required>
+        <p id="errorauthmessage">
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            {% for message in messages %}
+            {{ message }}
+            {% endfor %}
+            {% endif %}
+            {% endwith %}
+        </p>
+        <input type="submit" value="Submit" id="button">
+    </form>
+    <p>Already have an account? <b><a href="/login">Log In</a></b></p>
+</body>
+
+</html>
